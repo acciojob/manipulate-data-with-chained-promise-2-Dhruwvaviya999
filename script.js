@@ -29,6 +29,7 @@ function promise3(arr) {
 promise1().then((res) => {
 	return promise2(res);
 }).then((res)=>{
+	outputDiv.textContent = res.join(",");
 	return promise3(res);
 }).then((res)=>{
 	outputDiv.textContent = res.join(",");
